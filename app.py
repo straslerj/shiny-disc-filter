@@ -4,7 +4,7 @@ from pathlib import Path
 from shiny import App, reactive, render, ui
 
 
-infile = Path(__file__).parent / "../data/disc-data.csv"
+infile = Path(__file__).parent / "disc-data.csv"
 df = pd.read_csv(infile)
 df = df.replace(r"\n", " ", regex=True)
 
