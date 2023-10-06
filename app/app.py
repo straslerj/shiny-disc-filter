@@ -4,13 +4,13 @@ from pathlib import Path
 from shiny import App, reactive, render, ui
 
 
-infile = Path(__file__).parent / "disc-data.csv"
+infile = Path(__file__).parent / "../data/disc-data.csv"
 df = pd.read_csv(infile)
 df = df.replace(r"\n", " ", regex=True)
 
 
 app_ui = ui.page_fluid(
-    ui.panel_title("Disc Finder", "Disc Finder"),
+    ui.panel_title("Disc Filter", "Disc Filter"),
     ui.input_action_button("show", "What is this page?"),
     ui.input_slider(
         "speed",
