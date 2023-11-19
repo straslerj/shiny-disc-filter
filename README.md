@@ -3,7 +3,7 @@ Using Shiny to create a disc golf disc filter by speed and stability.
 
 ## Using on the Web
 
-To use this tool on the web, simply navigate to 
+To use this tool on the web, simply navigate to https://jakestrasler.shinyapps.io/disc-filter/
 
 ## Running Locally
 
